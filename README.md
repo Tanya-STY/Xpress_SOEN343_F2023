@@ -24,14 +24,14 @@ The general scope of the project within the context of the SOEN343 design course
   * GitHub Username:ihanaaa
   * Roles:Developer and Tester Q/A
 * **Muiz Madadi**
-  * GitHub Username:
+  * GitHub Username:mzmddi
   * Roles:Developer and System Architect
 * **Shamma Markis**
   * GitHub Username:shamma13
   * Roles:Developer and Tester/QA
 * **Stefan Papuc**
-  * GitHub Username:
-  * Roles:
+  * GitHub Username:stefanluc
+  * Roles:Developer and Tester Q/A
 * **Tanya So Tin Yan**
   * GitHub Username:Tanya-STY
   * Roles:Project Manager and Developer
