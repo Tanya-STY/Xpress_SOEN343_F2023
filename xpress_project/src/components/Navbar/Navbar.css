@@ -1,0 +1,104 @@
+/* Nav */
+nav {
+    background: #F4ECE1;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1000px) / 2);
+    z-index: 10;
+  }
+  
+
+  /* NavLink */
+  a.nav-link {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif; /* Apply the Poppins font to the links */
+
+  }
+  
+  a.nav-link.active {
+    color: #15cdfc;
+  }
+  
+  /* Bars */
+  .fa-bars {
+    display: none;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .fa-bars {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 75%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  }
+  
+  /* NavMenu */
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    margin-right: -24px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-menu {
+      display: none;
+    }
+  }
+  
+  /* NavBtn */
+  .nav-btn {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-btn {
+      display: none;
+    }
+  }
+  
+  /* NavBtnLink */
+  a.nav-btn-link {
+    border-radius: 4px;
+    background: #256ce1;
+    padding: 10px 22px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    margin-left: 24px;
+  }
+  
+  a.nav-btn-link:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+  }
+
+  .navbar-logo img{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 18px;
+    left: 10px;
+  }
+
+  .navbar-list li a{ 
+    font-family: 'Poppins', sans-serif; /* Apply the Poppins font to the links */
+  }
+  
