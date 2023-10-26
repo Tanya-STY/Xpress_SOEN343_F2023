@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar.css'; // Import the converted CSS
 import { Link } from 'react-router-dom'; // Use the standard Link component
 import logo from '../images/Xpress_logo.png';
+import profile from '../images/profilePic.png';
 
 
 const Navbar = () => {
@@ -28,8 +29,9 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="nav-btn">
-        <Link to="signin" className="nav-btn-link">
-          Sign In
+        <Link to="profile" className="nav-btn-link">
+          {/* Sign In */}
+          <img src={profile} alt="Profile" style={{ width: '50px', marginRight:'5px' }}/>
         </Link>
       </div>
     </nav>
