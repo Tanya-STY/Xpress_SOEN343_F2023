@@ -22,7 +22,7 @@ import Navbar from './components/Navbar/Navbar'; // Import your Navbar component
 
 function App() {
   return (
-    <Router>
+    <Router> 
       <Navbar/>
     </Router>
   );
