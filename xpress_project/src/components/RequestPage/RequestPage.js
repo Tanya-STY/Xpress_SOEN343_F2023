@@ -1,5 +1,5 @@
 import "./RequestPage.css";
-import "../Navbar/Navbar.js"
+import "../Navbar_SignedIn/Navbar_SignedIn.js"
 
 function RequestPage() {
     return (
