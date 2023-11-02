@@ -1,5 +1,5 @@
 import React from 'react';
-import './Navbar.css'; // Import the converted CSS
+import './Navbar_SignedIn.css'; // Import the converted CSS
 import { Link } from 'react-router-dom'; // Use the standard Link component
 import logo from '../images/Xpress_logo.png';
 import profile from '../images/profilePic.png';
@@ -36,12 +36,18 @@ const Navbar = () => {
           <img src={profile} alt="Profile" style={{ width: '50px', marginRight:'5px' }}/>
         </Link>
       </div> */}
-         <div className="nav-btn">
-        <Link to="profile" className="nav-btn-link">
-          <img src={profile} alt="Profile" style={{ width: '50px', marginRight:'5px' }}/>
-        </Link>
-      </div>
-    
+      <div className="nav-btn">
+      <Link to="profile" className="nav-btn-link">
+        <div className="profile-container">
+          <img src={profile} alt="Profile" style={{ width: '50px', marginRight: '5px' }} />
+          <div class="dropdown-menu">
+            <Link to="/option1">Delivery Requests</Link>
+            <Link to="/option2">Updates</Link>
+            <Link to="/option3">Log Out</Link>
+          </div>
+        </div>
+      </Link>
+    </div>
     </nav>
   );
 };
