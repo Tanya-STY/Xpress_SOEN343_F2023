@@ -1,0 +1,15 @@
+UserDetails {
+    background: #F4ECE1;
+    height: 500x;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0.5rem calc((100vw - 1000px) / 2); */
+    padding: 0;
+    z-index: 10;
+  }
+
+  .UserInfo{
+    background: red;
+    height: 15px;
+    width: 60px;
+  }
