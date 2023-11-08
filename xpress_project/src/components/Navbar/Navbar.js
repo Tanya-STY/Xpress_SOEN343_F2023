@@ -31,11 +31,7 @@ const Navbar = () => {
           FAQ
         </Link>
       </div>
-      {/* <div className="nav-btn">
-        <Link to="profile" className="nav-btn-link">
-          <img src={profile} alt="Profile" style={{ width: '50px', marginRight:'5px' }}/>
-        </Link>
-      </div> */}
+     
          <div className="nav-btn">
         <Link to="profile" className="nav-btn-link">
           <img src={profile} alt="Profile" style={{ width: '50px', marginRight:'5px' }}/>

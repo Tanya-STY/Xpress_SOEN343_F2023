@@ -1,17 +1,29 @@
 
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import './App.css';
-import Navbar from './components/Navbar/Navbar'; // Import your Navbar component
-import UserDetails from './Pages/UserDetails/UserDetails';
-// import Navbar_SignedIn from './components/Navbar_SignedIn/Navbar_SignedIn'
+// import React from 'react';
+// import { BrowserRouter as Router } from 'react-router-dom';
+// import './App.css';
+// import Navbar from './components/Navbar/Navbar'; // Import your Navbar component
+
+
+// function App() {
+//   return (
+//     <Router> 
+//       <Navbar/>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+import UserDetail from './Pages/UserDetail/UserDetail'; // Adjust the import path as needed
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
-    <Router> 
-      {/* <Navbar/> */}
-      <UserDetails/>
-    </Router>
+    <div className="App">
+      <Navbar/>
+      <UserDetail />
+    </div>
   );
 }
 
