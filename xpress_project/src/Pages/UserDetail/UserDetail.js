@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import './UserDetail.css';
+import userDetails from '../../components/images/UserDetails.png';
 // import Navbar from '../../components/Navbar/Navbar'; // Import the Navbar component
 
 class UserDetail extends Component {
@@ -49,8 +50,9 @@ class UserDetail extends Component {
       
       <div className="page-content">
       {/* <Navbar /> */}
+      <h1>Payment Details</h1>
+
       <div className="user-details">
-        <h1>Payment Details</h1>
         <form onSubmit={this.handleSubmit}>
           <div>
             <label htmlFor="firstName">First Name:</label>
@@ -74,6 +76,7 @@ class UserDetail extends Component {
               required
             />
           </div>
+          
           <div>
             <label htmlFor="email">Email:</label>
             <input
@@ -115,7 +118,15 @@ class UserDetail extends Component {
           
           <button type="submit">Submit</button>
         </form>
+        
+        <div className='UserDetailsImg'> 
+        <img src={userDetails} alt="userDetails" />
       </div>
+
+      </div>
+
+     
+
       </div>
     );
   }

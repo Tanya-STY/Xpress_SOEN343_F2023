@@ -17,6 +17,16 @@ h1{
 .user-details {
   background: #F4ECE1;
   width: 100%;
+  display: flex;
+}
+
+.UserDetailsImg{
+  margin-right: auto;
+}
+
+.UserDetailsImg img{
+  max-width: 50%;
+  height: auto;
 }
 
 .user-details div {
@@ -53,3 +63,5 @@ h1{
 .user-details button:hover {
   background: #F69C00; /* Change color on hover */
 }
+
+

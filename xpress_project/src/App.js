@@ -15,12 +15,13 @@
 
 // export default App;
 
+import UserDetail from './Pages/UserDetail/UserDetail.js';
 import PaymentDetails from './Pages/PaymentDetails/PaymentDetails'
 
 function App() {
   return (
     <div className="App">
-      <PaymentDetails/>
+      <UserDetail/>
     </div>
   );
 }
