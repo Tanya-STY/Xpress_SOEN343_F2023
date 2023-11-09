@@ -15,14 +15,12 @@
 
 // export default App;
 
-import UserDetail from './Pages/UserDetail/UserDetail'; // Adjust the import path as needed
-import Navbar from './components/Navbar/Navbar';
+import PaymentDetails from './Pages/PaymentDetails/PaymentDetails'
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar/> */}
-      <UserDetail />
+      <PaymentDetails/>
     </div>
   );
 }
