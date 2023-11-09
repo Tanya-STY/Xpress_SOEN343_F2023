@@ -7,22 +7,37 @@ function RequestPage() {
             <Navbar/>
             <div class="content">
                 <div class="informationBox">
-                    <div class='infoItem' id="delTitle"> 
+                    <div class='infoItem' id="Title"> 
                         Quotation
                     </div>
-                    <div class='infoItem' id='delSubTitle'>
-                        with a few clicks, make a delivery request!
+                    <div class='infoItem' id='SubTitle'>
+                    Within a few clicks, make a delivery request!
                     </div>
-                    <div class='infoItem' id="pickUp">
-                        pick up address
+                    <div class='infoItem' id="pickUpInput">
+
+                        <div id='inputMapItem'>
+                            <div id='icon'>
+
+                            </div>
+                            <div id='fieldMap'>
+                                <form id='mapForm'>
+                                    <input type='text' id='mapInput'></input>
+                                </form>
+
+                            </div>
+                        </div>
+               
+                            
+
+                  
                     </div>
-                    <div class='infoItem'>
+                    <div class='infoItem' id='dropOffInput'>
                         drop off
                     </div>
-                    <div class='infoItem'>
+                    <div class='infoItem' id='FindSubmitButton'>
                         find button
                     </div>
-                    <div class='infoItem'>
+                    <div class='infoItem' id='RestOfthepgae'>
                         rest of the page
                     </div>
                 </div>

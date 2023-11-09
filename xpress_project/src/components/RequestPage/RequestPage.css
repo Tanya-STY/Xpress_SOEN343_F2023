@@ -1,8 +1,8 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #F4ECE1;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+background-color: #F4ECE1;
 
 }
 .content {
@@ -16,7 +16,7 @@
     background-color: red;
     flex-grow: 6;
     min-height: 100%;
-    margin: 10px;
+    margin: 10px;  
     flex-flow: column;
 }
 .imageBox{
@@ -29,7 +29,65 @@
     border: solid black;
     display: flex;
 }
+#Title{
+    padding: 10px;
+     color: var(--theme-white, #FFF);
+     text-shadow: 0px 27px 82px rgba(255, 174, 0, 0.28), 0px 14px 15px rgba(255, 174, 0, 0.01);
+     font-family: Source Sans Pro;
+     font-size: 88px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 100%;  
+}
+#SubTitle{
+    padding: 10px;
+    color: #504F4F;    
+    /* Headline 6 */
+    font-family: Source Sans Pro;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.4px; /* 26.4px */
+}
+#pickUpInput{
+    display: flex;
+    align-items: center;
+padding: 20px;
+flex-direction: row;
+align-items: flex-start;
+align-self: stretch;
+width: 50%;
+margin: 24px;
+border-radius: 10px;
+}
+#inputMapItem{
+    border: solid black;
+    display: flex;
+    padding: 7px 0px 8px 16px;
+    align-items: center;
+    gap: 12px;
+    flex: 1 0 0;
+    border-radius:10px;
+}
+#icon{
+    border: solid black;
+    flex-grow:1;
+}
+#fieldMap{
+    border: solid black;
+    flex-grow:10;
+}
+#mapForm{
+    border:0;
+    padding:0;
+    margin:0;
+    display: flex;
+    align-self: stretch;
+    align-items: flex-start;
+    
+}
+#mapInput{
+    align-self: stretch;
 
-
-
+}
 
