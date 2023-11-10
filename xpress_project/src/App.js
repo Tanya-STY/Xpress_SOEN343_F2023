@@ -19,12 +19,16 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar/Navbar'; // Import your Navbar component
+import MainPage from './components/MainPage/MainPage';
 
 function App() {
   return (
+  <div className="app">
     <Router>
       <Navbar/>
+      <MainPage/>
     </Router>
+     </div>
   );
 }
 
