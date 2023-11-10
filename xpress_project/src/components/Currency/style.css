@@ -1,0 +1,20 @@
+.currency {
+    height: 18px;
+    position: relative;
+    width: 8px;
+  }
+  
+  .currency .text-wrapper {
+    color: #121212;
+    font-family: "Manrope", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    height: 18px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 18px;
+    position: absolute;
+    top: -1px;
+    white-space: nowrap;
+  }
+  
