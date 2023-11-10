@@ -1,5 +1,7 @@
 import "./RequestPage.css";
 import Navbar from "../Navbar_SignedIn/Navbar_SignedIn"
+import geoIcon from './geoIcon_xpress.jpg' 
+import carGuy from './manInACar_xpress.png'
 
 function RequestPage() {
     return (
@@ -17,32 +19,35 @@ function RequestPage() {
 
                         <div id='inputMapItem'>
                             <div id='icon'>
-
+                                <img id='geoIcon' alt='Icon Not Found' src={geoIcon} width='15px' height='15px'/>
                             </div>
                             <div id='fieldMap'>
                                 <form id='mapForm'>
-                                    <input type='text' id='mapInput'></input>
+                                    <input type='text' id='mapInput' placeholder='  Pick Up Address'></input>
                                 </form>
-
                             </div>
                         </div>
-               
-                            
-
-                  
                     </div>
                     <div class='infoItem' id='dropOffInput'>
-                        drop off
+                        <div id='inputMapItem'>
+                            <div id='icon'>
+                                <img id='geoIcon' alt='Icon Not Found' src={geoIcon} width='15px' height='15px'/>
+                            </div>
+                            <div id='fieldMap'>
+                                <form id='mapForm'>
+                                    <input type='text' id='mapInput' placeholder='  Drop Off Address'></input>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                     <div class='infoItem' id='FindSubmitButton'>
-                        find button
+                        <button type='submit'>Submit</button>
                     </div>
-                    <div class='infoItem' id='RestOfthepgae'>
-                        rest of the page
+                    <div class='infoItem' id='RestOfthePage'>
                     </div>
                 </div>
                 <div class="imageBox">
-                    hello2
+                    <img alt='scooter Boy image not loading' src={carGuy} width='100%'></img>
                 </div>
             </div>
         </main>
