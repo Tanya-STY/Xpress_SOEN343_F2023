@@ -9,4 +9,3 @@ export const Currency = () => {
   );
 };
 
-export default Currency;

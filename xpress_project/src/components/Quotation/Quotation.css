@@ -1,0 +1,333 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F4ECE1;
+    
+    }
+    .content {
+        display: flex; 
+        flex-grow: 1; 
+        max-width: 100%;
+        background-color: #F4ECE1;
+        margin: 10px;
+    }
+    
+    .componentBox{
+        /* background-color: red; */
+        display: flex;
+        flex-grow: 6;
+        min-height: 100%;
+        margin: 10px;  
+        flex-flow: column;
+        /* flex: 0 0 auto; */
+        /* width: 499px; */
+    }
+    .item{
+        align-items: flex-start;
+        display: flex;
+        flex: 0 0 auto;
+        position: relative;
+        width: 499px;
+        height: 30%;
+    }
+
+    .componentBox .item-description{
+        /* align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1; 
+        padding: 8px 0px; */
+        align-items: flex-start;
+        display: flex;
+        flex: 1; 
+        /* min-height: 100%; */
+        flex-flow: column;
+        width: 223px;
+        padding: 70px 40px;
+    }
+
+    .componentBox .div{
+        color: #121212;
+        font-family: "Manrope-Bold", Helvetica;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0;
+        line-height: 18px;
+        margin-right: -44px;
+        margin-top: -1px;
+        position: relative;
+        width: 223px;
+    }
+
+    .componentBox .pick-up-address-drop {
+        color: #121212;
+        font-family: "Manrope-Regular", Helvetica;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 25px;
+        margin-right: -44px;
+        opacity: 0.8;
+        position: relative;
+        width: 223px;
+      }
+
+    .componentBox .quantity{
+        flex: 1;
+        min-height: 100%;
+        /* flex-flow: column;  */
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        gap: 10px;
+        padding: 70px 30px 30px;
+    }
+
+    .componentBox .text-wrapper-2 {
+        color: #121212;
+        font-family: "Manrope-Regular", Helvetica;
+        font-size: 17px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 18px;
+        margin-top: -1px;
+        position: relative;
+        width: 88px;
+      }
+    
+    .componentBox .unit-price{
+        flex: 1; 
+        gap: 2px;
+        padding: 70px 30px;
+        width: 99px;
+    }
+
+    .componentBox .text-wrapper-3 {
+        color: #121212;
+        font-family: "Manrope-Regular", Helvetica;
+        font-size: 17px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 18px;
+        margin-top: -1px;
+        position: relative;
+        width: 83px;
+      }
+
+    .componentBox .amount{
+        flex: 1; 
+        gap: 2px;
+        padding: 70px 20px;
+        width: 120px;
+    }
+
+    .componentBox .text-wrapper-4 {
+        color: #121212;
+        font-family: "Manrope-Regular", Helvetica;
+        font-size: 17px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 18px;
+        margin-top: -1px;
+        position: relative;
+        width: 120px;
+      }
+
+      .componentBox .item2 {
+        align-items: flex-start;
+        display: inline-flex;
+        flex-direction: column;
+        gap: 4px;
+        position: relative;
+        height: 60%;
+        /* flex: 0 0 auto; */
+      }
+
+      .componentBox .item2 .div {
+        /* height: 18px; */
+        position: relative;
+        width: 220px;
+        margin: 10px;
+        padding-left: 25px;
+      }
+
+      .componentBox .item2 .text-wrapper-2 {
+        color: #121212;
+        font-family: "Manrope-Regular", Helvetica;
+        font-size: 17px;
+        font-weight: 400;
+        height: 18px;
+        left: 180px;
+        letter-spacing: 0;
+        line-height: 18px;
+        position: absolute;
+        top: -1px;
+        width: 130px;
+      } 
+
+      .componentBox .item2 .text-wrapper-3 {
+        color: #121212;
+        font-family: "Manrope-SemiBold", Helvetica;
+        font-size: 17px;
+        font-weight: 600;
+        height: 18px;
+        left: 0;
+        letter-spacing: 0;
+        line-height: 14px;
+        /* position: absolute; */
+        top: -1px;
+        width: 120px;
+      }
+
+      .componentBox .item2 .invoice-quote-date {
+        color: #121212;
+        font-family: "Manrope-Bold", Helvetica;
+        font-size: 17px;
+        font-weight: 700;
+        height: 18px;
+        left: 0;
+        letter-spacing: 0;
+        line-height: 14px;
+        /* position: absolute; */
+        top: -1px;
+        width: 120px;
+      }
+
+      .componentBox .item2 .total-due {
+        background-color: #F4ECE1;
+        border-radius: 4px;
+        height: 26px;
+        /* position: relative; */
+        width: 240px;
+        padding-top:10px;
+      }
+
+      .componentBox .item2 .overlap-group {
+        background-color: #e5e5e5;
+        border-radius: 4px;
+        height: 26px;
+        left: 30px;
+        position: relative;
+        width: 295px;
+      }
+
+      .componentBox .item2 .text-wrapper-4 {
+        color: #000000;
+        font-family: "Manrope-ExtraBold", Helvetica;
+        font-size: 15px;
+        font-weight: 800;
+        height: 18px;
+        left: 160px;
+        letter-spacing: -0.7px;
+        line-height: 18px;
+        position: absolute;
+        top: 3px;
+        width: 180px;
+      }
+      
+      .componentBox .item2 .invoice-quote-date-2 {
+        color: #000000;
+        font-family: "Manrope-ExtraBold", Helvetica;
+        font-size: 15px;
+        font-weight: 800;
+        height: 18px;
+        left: 6px;
+        letter-spacing: 0;
+        line-height: 14px;
+        position: absolute;
+        top: 3px;
+        width: 120px;
+      }
+
+      .item2 .button {
+        align-items: flex-end;
+        background: linear-gradient(180deg, rgb(255, 122.19, 122.19) 0%, rgb(246.5, 88.74, 0) 100%);
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 8px;
+        display: inline-flex;
+        gap: 10px;
+        justify-content: center;
+        padding: 21px 48px;
+        position: relative;
+        top:100px;
+        left:350px;
+    }
+
+    .button .text{
+        /* color: var(--theme-white);
+        font-family: var(--button-bold-font-family);
+        font-size: var(--button-bold-font-size);
+        font-style: var(--button-bold-font-style);
+        font-weight: var(--button-bold-font-weight);
+        letter-spacing: var(--button-bold-letter-spacing);
+        line-height: var(--button-bold-line-height); */
+        color:white;
+        font-weight: 900;
+        margin-top: -1px;
+        position: relative;
+        text-align: center;
+        width: 79px;
+    }
+
+
+
+      .terms-conditions {
+        align-items: flex-start;
+        display: inline-flex;
+        flex-direction: column;
+        gap: 2px;
+        height: 62px;
+        position: relative;
+      }
+      
+      .terms-conditions .text-wrapper {
+        color: #121212;
+        font-family: "Manrope-SemiBold", Helvetica;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        line-height: 14px;
+        margin-top: -1px;
+        opacity: 0.8;
+        position: relative;
+        width: 359px;
+      }
+      
+      .terms-conditions .div {
+        color: #121212;
+        font-family: "Manrope-Regular", Helvetica;
+        font-size: 8px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 12px;
+        opacity: 0.6;
+        position: relative;
+        width: 359px;
+      }
+      
+
+
+    .imageBox{
+        /* background-color: blue; */
+        min-height: 100%;
+        flex-grow: 2;
+        margin: 10px;
+        /* width:fit-content; */
+    }
+
+    .infoItem{
+        border: solid black;
+        display: flex;
+    }
+    #Title{
+        padding: 10px;
+         color: var(--theme-white, #FFF);
+         text-shadow: 0px 27px 82px rgba(255, 174, 0, 0.28), 0px 14px 15px rgba(255, 174, 0, 0.01);
+         font-family: Source Sans Pro;
+         font-size: 88px;
+         font-style: normal;
+         font-weight: 700;
+         line-height: 100%;  
+    }
+    
