@@ -14,14 +14,14 @@ background-color: #F4ECE1;
 }
 .informationBox{
 
-    flex-grow: 20;
+    flex-grow: 1;
     min-height: 100%;
     margin: 10px;  
     flex-flow: column;
 }
 .imageBox{
     min-height: 100%;
-    flex-grow: 6;
+    flex-grow: 2;
     margin: 10px;
     display: flex;
     flex-direction: column;
