@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// The <BrowserRouter> will wrap the entire application component which 
+// is going to be using this one single router to manage all the routing 
+// (manage the connection between pages)
+import { BrowserRouter } from "react-router-dom" // This will allow to route throughout the browser
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
