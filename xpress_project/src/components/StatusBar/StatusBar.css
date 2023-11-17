@@ -1,0 +1,93 @@
+/* StatusBar.css */
+
+.step-progress-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.step {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: #EFEFEF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #909090;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.step.active {
+  background-color: #FF7E00;
+  color: white;
+}
+
+.step.completed {
+  background-color: #FF7E00;
+  color: white;
+}
+
+.step-number {
+  font-size: 18px;
+}
+
+.step-labels {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.step-label {
+  text-align: center;
+  font-size: 12px;
+  color: #909090;
+  transition: color 0.3s;
+}
+
+.step-label.completed {
+  color: #FF7E00;
+}
+
+.connector-line {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.connector {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #EFEFEF;
+  transition: background-color 0.3s;
+}
+
+.connector.active,
+.connector.completed {
+  background-color: #FF7E00;
+}
+
+.next-button {
+  background-color: #2F2F2F;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-button:hover {
+  background-color: #4F4F4F;
+}

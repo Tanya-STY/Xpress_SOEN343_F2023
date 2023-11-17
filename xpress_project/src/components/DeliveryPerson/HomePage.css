@@ -1,0 +1,62 @@
+/* HomePage.css */
+
+.home-page-container {
+  background-color: #F4EDE1;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page-title {
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.delivery-table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Header Row Styles */
+.delivery-table th {
+  background-color: #EFEFEF; /* Light Gray */
+  color: black;
+}
+
+/* Request Row Styles */
+.delivery-table tr {
+  margin-bottom: 15px; /* Add space between rows */
+}
+
+/* Bubble Styles */
+.delivery-bubble {
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  padding: 20px;
+  position: relative;
+}
+
+/* Bright Orange for Delivery Numbers */
+.delivery-table .delivery-number {
+  color: #FF7E00;
+}
+
+/* Truck Icon Styles */
+.truck-icon {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Adjustments for Smaller Screens */
+@media (max-width: 600px) {
+  .delivery-table th, .delivery-table td {
+    font-size: 12px;
+  }
+}

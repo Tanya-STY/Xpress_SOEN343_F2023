@@ -1,0 +1,23 @@
+/* RequestStatus.css */
+
+.request-status-container {
+  background-color: #F4EDE1;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+}
+
+.page-title {
+  color: black;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 20px;
+  align-self: flex-start; /* Align the title to the left side */
+}
+
+.status-bar-wrapper {
+  margin-top: 20px;
+  width: 80%;
+}
