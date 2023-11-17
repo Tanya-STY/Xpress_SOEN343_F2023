@@ -1,0 +1,55 @@
+body{
+    background: #F4ECE1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .page-content {
+    margin-left: 30px; /* 50px space between the div and the left edge */
+    padding: 10px;
+  }
+  
+  h1{
+    margin-left: 40px;
+  }
+  
+  
+  .user-details {
+    background: #F4ECE1;
+    width: 100%;
+  }
+  
+  .user-details div {
+    margin-left: 30px; /* 50px space between the div and the left edge */
+    padding: 10px;
+  }
+  
+  /* You can add additional styles as needed for labels and input fields */
+  .user-details label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .user-details input {
+    width: 400px; /* Full width input fields */
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Example border for input fields */
+    border-radius: 4px;
+  }
+  
+  .user-details button {
+    background: #F65900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 40px;
+    border-radius: 4px;
+  }
+  
+  .user-details button:hover {
+    background: #F69C00; /* Change color on hover */
+  }

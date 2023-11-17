@@ -1,0 +1,136 @@
+/* Nav */
+nav {
+    background: #F4ECE1;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0.5rem calc((100vw - 1000px) / 2); */
+    padding: 0;
+    z-index: 10;
+  }
+  
+
+  /* NavLink */
+  a.nav-link {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif; /* Apply the Poppins font to the links */
+
+  }
+  
+  /* Bars */
+  .fa-bars {
+    display: none;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .fa-bars {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 75%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  }
+  
+  /* NavMenu */
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    margin-right: -50px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-menu {
+      display: none;
+    }
+  }
+  
+  /* NavBtn */
+  .nav-btn {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-btn {
+      display: none;
+    }
+  }
+  
+  /* NavBtnLink */
+  a.nav-btn-link {
+    /* border-radius: 4px; */
+    /* background: #256ce1; */
+    padding: 10px 2px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    margin-left: 24px;
+  }
+  
+
+  .navbar-logo img{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 18px;
+    left: 10px;
+  }
+
+  /* Dropdown Menu Styles */
+
+/* Profile container to position it relative for dropdown */
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  /* margin-right: 200px; */
+  left: -130px;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  min-width: 180px;
+  border-radius: 0.5rem;
+}
+
+/* Display the dropdown when the profile container is hovered */
+.profile-container:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown Menu Links */
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-menu a:hover {
+  background-color: #f4f4f4;
+}
+
+
+ 

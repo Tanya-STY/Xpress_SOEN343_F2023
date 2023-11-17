@@ -3,9 +3,10 @@ import React from 'react';
 // import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar/Navbar'; // Import your Navbar component
-import Reviews from './components/Pages/Reviews/Reviews'; // Import your Reviews component for the page
+import Reviews from './Pages/Reviews/Reviews'; // Import your Reviews component for the page
 // here is where the BrowseRouter will be defined by importing a Route and Routes component
 import { Route, Routes } from 'react-router-dom'
+import UserDetail from './Pages/UserDetail/UserDetail';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Quotation" />
         <Route path="/FAQ" />
         <Route path="/profile" />
+        <Route path="/paymentDetail" element={<UserDetail />}/>
       </Routes>
     </>
   );
