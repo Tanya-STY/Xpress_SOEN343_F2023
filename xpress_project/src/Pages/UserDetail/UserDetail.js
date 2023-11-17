@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import './UserDetail.css';
 import userDetails from '../../components/images/UserDetails.png';
-// import Navbar from '../../components/Navbar/Navbar'; // Import the Navbar component
+import Navbar from '../../components/Navbar/Navbar'; // Import the Navbar component
 
 class UserDetail extends Component {
   constructor(props) {
@@ -46,10 +46,10 @@ class UserDetail extends Component {
   };
 
   render() {
+    <Navbar/>
+
     return (
-      
       <div className="page-content">
-      {/* <Navbar /> */}
       <h1>Payment Details</h1>
 
       <div className="user-details">

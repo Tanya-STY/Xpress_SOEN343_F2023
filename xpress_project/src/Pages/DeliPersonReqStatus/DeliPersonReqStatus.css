@@ -1,0 +1,81 @@
+.timeline-container {
+  display: flex;
+  flex-direction: column; /* Display timelines vertically */
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  margin-top: 90px;
+}
+
+.timeline1 {
+  position: relative;
+  height: 2px; /* Thickness of the timeline */
+  width: 80%; /* Adjust as needed */
+  background-color: #333; /* Color of the timeline */
+  margin-bottom: 20px; /* Gap between timeline1 and timeline2 */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline2 {
+  position: relative;
+  height: 0px; /* Thickness of the timeline */
+  width: 90%; /* Adjust as needed */
+  background-color: #333; /* Color of the timeline */
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bullet2 {
+  width: 100px; /* Diameter of the bullet */
+  height: 30px;
+  background-color: #333; /* Color of the bullet */
+  border-radius: 10%;
+  justify-content: center;
+  transition: background-color 0.3s; /* Add transition for smooth color change */
+}
+
+/* Add margin or padding to separate the bullets */
+.bullet2:not(:last-child) {
+  margin-right: 20px; /* Adjust as needed */
+}
+
+/* Add margin or padding to separate the bullets */
+.bullet2.active,
+.bullet2.active button {
+  background-color: orange;
+}
+
+
+.bullet2.inactive {
+  background-color: lightgrey;
+  cursor: pointer; /* Change cursor for inactive buttons */
+}
+
+.bullet {
+  width: 12px; /* Diameter of the bullet */
+  height: 12px;
+  background-color: #333; /* Color of the bullet */
+  border-radius: 50%;
+}
+
+/* Add margin or padding to separate the bullets */
+.bullet:not(:last-child) {
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.request-info {
+  margin-top: 100px;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+
+

@@ -17,11 +17,15 @@
 
 import UserDetail from './Pages/UserDetail/UserDetail.js';
 import PaymentDetails from './Pages/PaymentDetails/PaymentDetails'
+import Navbar from './components/Navbar/Navbar.js';
+import DeliPersonReqStatus from './Pages/DeliPersonReqStatus/DeliPersonReqStatus.js';
 
 function App() {
   return (
     <div className="App">
-      <UserDetail/>
+      {/* <UserDetail/> */}
+      {/* <Navbar/> */}
+      <DeliPersonReqStatus/>
     </div>
   );
 }
