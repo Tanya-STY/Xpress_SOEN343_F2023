@@ -1,44 +1,13 @@
 import "./Quotation.css";
 // import { Currency } from "../Currency";
-import React, {useState, useEffect} from 'react';
 import Navbar from "../Navbar_SignedIn/Navbar_SignedIn"
-import quotationPic from "../images/quotationPic.png"
+import deliveryPic from "../images/image3.png"
+import box from "../images/image8.png";
 
-function Quotation() {
-
-    const [distance, setDistance] = useState(0); //state to hold distance value
-
-    useEffect(() => {
-        const storedDistance = localStorage.getItem('distance');
-        if (storedDistance) {
-            setDistance(parseFloat(storedDistance));
-        }
-    }, []);
-
-    const calculatePrice = () => {
-        const pricePerKm = 2;
-        const totalPrice = pricePerKm * distance;
-        return totalPrice.toFixed(2);
-    };
-
-    const calculateTax = () => {
-        const tax = 0.15;
-        const taxApplied = tax * calculatePrice();
-        return taxApplied.toFixed(2);
-    };
-
-    const totaldue = () => {
-        const total = parseFloat(calculatePrice()) + parseFloat(calculateTax());
-        return total.toFixed(2);
-    };
-
-    const handleDistanceChange = (newDistance) => {
-        setDistance(newDistance);
-        localStorage.setItem('distance', newDistance);
-    };
-
+function Package_det() {
     return (
         <main class="main">
+            <Navbar/>
             
             <div class="content">
             
@@ -53,7 +22,7 @@ function Quotation() {
                         </div>
                     </div>
                     <div className="quantity">
-                        <div className="text-wrapper-2">[distance: {distance} km]</div>
+                        <div className="text-wrapper-2">[distance:xxx]</div>
                     </div>
                     <div className="unit-price">
                     {/* <Currency /> */}
@@ -61,25 +30,25 @@ function Quotation() {
                     </div>
                     <div className="amount">
                     {/* <Currency /> */}
-                        <div className="text-wrapper-4">$ {calculatePrice()}</div>
+                        <div className="text-wrapper-4">$ 9,999,999.00</div>
                     </div>
                 </div>
 
                 <div class="item2">
                 <div className="div">
-                    <div className="text-wrapper-2">$ {calculatePrice()}</div>
+                    <div className="text-wrapper-2">$ 99,999,999.00</div>
                     {/* <Currency className="currency-instance" /> */}
                     <div className="text-wrapper-3">Subtotal</div>
                 </div>
                 <div className="div">
-                    <div className="text-wrapper-2">$ {calculateTax()}</div>
+                    <div className="text-wrapper-2">$ 99,999,999.00</div>
                     {/* <Currency className="currency-instance" /> */}
                     <div className="invoice-quote-date">Tax: Vat(15%)</div>
                 </div>
                 <div className="total-due">
                     <div className="overlap-group">
                     {/* <Currency className="design-component-instance-node" divClassName="currency-2" /> */}
-                    <div className="text-wrapper-4">$ {totaldue()}</div>
+                    <div className="text-wrapper-4">$ 999,999,999.00</div>
                     <div className="invoice-quote-date-2">Total Due</div>
                     </div>
                 </div>
@@ -104,11 +73,11 @@ function Quotation() {
                 </div>
 
                 <div class="imageBox">
-                    <img className="element-converted" alt="Element converted" src={quotationPic} />
+                    <img className="element-converted" alt="Element converted" src={deliveryPic} />
                 </div>
             </div>
             
         </main>
         
     );
-} export default Quotation; 
+} export default Package_det; 

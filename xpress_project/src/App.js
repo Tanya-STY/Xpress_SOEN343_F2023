@@ -16,7 +16,7 @@ import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
 // export default App;
 
 import UserDetail from './Pages/UserDetail/UserDetail'; // Adjust the import path as needed
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar_SignedIn/Navbar_SignedIn';
 import Quotation from './components/Quotation/Quotation';
 
 function App() {
@@ -26,15 +26,17 @@ function App() {
       <UserDetail /> */}
       {/* <Quotation/> */}
 
-      <Router>
+      <Navbar/>
+      
+      {/* <Router> */}
       <Routes>
-        <Route path="/" element={<Quotation/>}/>
-        {/* <Route path="/x" element={<x/>}/>
+        {/* <Route path="/" element={<Navbar/>}/> */}
+        <Route path="/Quotation" element={<Quotation/>}/>
         <Route path="/y" element={<y/>}/>
         <Route path="/z" element={<z/>}/>
-        <Route path="/*" element={<NotFound/>}/> */}
+        {/* <Route path="/*" element={<NotFound/>}/>  */}
       </Routes>
-    </Router>
+    {/* </Router> */}
 
 
     </div>
