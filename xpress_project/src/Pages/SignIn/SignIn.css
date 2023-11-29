@@ -1,7 +1,7 @@
-/* SignIn.css */
+SignIn.css
 
 /* Style the container */
-div {
+.signInContainer {
   max-width: 400px;
   margin: 0px auto;
   padding: 20px;

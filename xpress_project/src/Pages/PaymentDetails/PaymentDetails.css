@@ -7,6 +7,7 @@ body{
   .page-content {
     margin-left: 30px; /* 50px space between the div and the left edge */
     padding: 10px;
+    justify-content: center;
   }
   
   h1{
@@ -17,6 +18,7 @@ body{
   .user-details {
     background: #F4ECE1;
     width: 100%;
+    display: flex;
   }
   
   .user-details div {
@@ -52,5 +54,16 @@ body{
   
   .user-details button:hover {
     background: #F69C00; /* Change color on hover */
+  }
+
+
+  .PaymentImg{
+    margin-right: auto;
+  }
+  
+  .PaymentImg img{
+    max-width: 50%;
+    height: auto;
+    margin-left: 50px;
   }
   

@@ -7,6 +7,7 @@ body{
 .page-content {
   margin-left: 30px; /* 50px space between the div and the left edge */
   padding: 10px;
+  justify-content: center;
 }
 
 h1{
@@ -27,6 +28,7 @@ h1{
 .UserDetailsImg img{
   max-width: 50%;
   height: auto;
+  margin-left: 50px;
 }
 
 .user-details div {

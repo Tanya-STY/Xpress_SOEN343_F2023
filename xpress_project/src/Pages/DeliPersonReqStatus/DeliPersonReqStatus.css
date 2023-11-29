@@ -4,7 +4,6 @@
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
-  margin-top: 90px;
 }
 
 .timeline1 {
@@ -104,12 +103,28 @@
 }
 
 .request-info {
-  margin-top: 100px;
+  margin-top: 75px;
   padding: 20px;
   border: 1px solid #333;
   border-radius: 5px;
   background-color: #f0f0f0;
 }
 
+.review-button {
+  margin-top: 80px;
+  text-align: center;
+}
 
+.review-button button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
+.review-button button:hover {
+  background-color: #45a049;
+}

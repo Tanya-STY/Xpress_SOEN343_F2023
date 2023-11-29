@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './PaymentDetails.css';
+import paymentImg from '../../components/images/PaymentImg.png';
 
 class UserDetail extends Component {
   constructor(props) {
@@ -136,7 +137,13 @@ class UserDetail extends Component {
             
             <button type="submit">Submit</button>
           </form>
+
+          <div className='PaymentImg'> 
+        <img src={paymentImg} alt="paymentImg" />
+      </div>
         </div>
+        
+
       </div>
     );
   }

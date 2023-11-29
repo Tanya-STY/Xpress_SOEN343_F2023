@@ -46,7 +46,7 @@ class UserDetail extends Component {
   };
 
   render() {
-    <Navbar/>
+    // <Navbar/>
 
     return (
       <div className="page-content">

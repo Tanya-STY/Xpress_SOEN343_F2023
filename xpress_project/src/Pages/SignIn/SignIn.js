@@ -30,7 +30,7 @@ const SignIn = () => {
   };
 
   return (
-    <div>
+    <div className='signInContainer'>
       <h2>SIGN IN FORM</h2>
       <form role="form" onSubmit={signIn} autoComplete="off">
         <div className="form-group">

@@ -37,7 +37,7 @@ const SignUp = () => {
   };
 
   return (
-    <div>
+    <div className='signUpContainer'>
       <h2>SIGN UP FORM</h2>
       <form role="form" onSubmit={signUp} autoComplete="off">
         <div className="form-group">

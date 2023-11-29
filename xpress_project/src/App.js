@@ -28,10 +28,9 @@ function App() {
       {/* <UserDetail/> */}
       {/* <PaymentDetails/> */}
       {/* <Navbar/> */}
-      {/* <DeliPersonReqStatus/> */}
-      {/* <Home/> */}
+      <DeliPersonReqStatus/>
       {/* <SignIn/> */}
-      <SignUp/>
+      {/* <SignUp/> */}
     </div>
   );
 }
