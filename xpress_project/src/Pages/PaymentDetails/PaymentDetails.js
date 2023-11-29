@@ -68,8 +68,9 @@ class UserDetail extends Component {
     return (
       <div className="page-content">
         <div className="user-details">
-          <h1>Payment Details</h1>
           <form onSubmit={this.handleSubmit}>
+          <h1>Payment Details</h1>
+
             <div>
               <label htmlFor="NameOnCard">Name on card:</label>
               <input

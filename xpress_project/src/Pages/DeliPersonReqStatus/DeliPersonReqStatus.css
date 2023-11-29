@@ -19,6 +19,40 @@
   align-items: center;
 }
 
+.timeline1 {
+  position: relative;
+  height: 2px; /* Thickness of the timeline */
+  width: 80%; /* Adjust as needed */
+  background-color: #333; /* Default color of the timeline */
+  margin-bottom: 20px; /* Gap between timeline1 and timeline2 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline1.started {
+  background: linear-gradient(to right, #333 0%, #333 50%);
+}
+
+.timeline1.processed {
+  background: linear-gradient(to right, #F65900 25%, #333 20%);
+}
+
+.timeline1.picked {
+  background: linear-gradient(to right, #F65900 50%, #333 25%);
+}
+
+.timeline1.transit {
+  background: linear-gradient(to right, #F65900 75%, #333 20%);
+}
+
+.timeline1.dropped {
+  background: #F65900;
+}
+
+/* rest of the styles */
+
+
 .timeline2 {
   position: relative;
   height: 0px; /* Thickness of the timeline */
@@ -60,7 +94,7 @@
 .bullet {
   width: 12px; /* Diameter of the bullet */
   height: 12px;
-  background-color: #333; /* Color of the bullet */
+  background-color: #F65900; /* Color of the bullet */
   border-radius: 50%;
 }
 

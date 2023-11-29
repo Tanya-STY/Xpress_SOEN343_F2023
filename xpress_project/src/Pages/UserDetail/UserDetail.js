@@ -50,7 +50,7 @@ class UserDetail extends Component {
 
     return (
       <div className="page-content">
-      <h1>Payment Details</h1>
+      <h1>User Information</h1>
 
       <div className="user-details">
         <form onSubmit={this.handleSubmit}>

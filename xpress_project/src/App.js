@@ -24,6 +24,7 @@ function App() {
   return (
     <div className="App">
       {/* <UserDetail/> */}
+      {/* <PaymentDetails/> */}
       {/* <Navbar/> */}
       <DeliPersonReqStatus/>
     </div>

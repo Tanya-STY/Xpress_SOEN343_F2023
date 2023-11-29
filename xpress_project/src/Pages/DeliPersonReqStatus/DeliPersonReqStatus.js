@@ -12,11 +12,10 @@ const RequestInfo = () => {
 
   return (
     <div className="request-info">
-      <>
       <p>RequestID#: {requestInfo.requestId}</p>
       <p>PickUp Address: {requestInfo.pickUpAddress}</p>
       <p>DropOff Address: {requestInfo.dropOffAddress}</p>
-      <p>Estimated Delivery Date: {requestInfo.estimatedDeliveryDate}</p></>
+      <p>Estimated Delivery Date: {requestInfo.estimatedDeliveryDate}</p>
     </div>
   );
 };
@@ -24,14 +23,22 @@ const RequestInfo = () => {
 const DeliPersonReqStatus = () => {
   const [activeButton, setActiveButton] = useState('started');
 
-  const handleButtonClick = (button) => {
-    setActiveButton(button);
+   const handleButtonClick = (button) => {
+    const buttonOrder = ['started', 'processed', 'picked', 'transit', 'dropped'];
+    const currentButtonIndex = buttonOrder.indexOf(button);
+    const activeButtonIndex = buttonOrder.indexOf(activeButton);
+
+    // Check if the clicked button is in the correct order
+    if (currentButtonIndex > activeButtonIndex) {
+      setActiveButton(button);
+      // history.push(`/delivery-status?status=${button}`); // Navigate to DeliveryStatus with the status parameter
+    }
   };
 
   return (
     <div className="timeline-container">
       <h1>Delivery Request Status</h1>
-      <div className="timeline1">
+      <div className={`timeline1 ${activeButton}`}>
         <div className="bullet"></div>
         <div className="bullet"></div>
         <div className="bullet"></div>
