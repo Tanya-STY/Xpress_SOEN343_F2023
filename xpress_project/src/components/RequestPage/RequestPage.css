@@ -1,0 +1,144 @@
+.main {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+background-color: #F4ECE1;
+
+}
+.content {
+    display: flex; 
+    flex-grow: 1; 
+    max-width: 100%;
+    background-color: #F4ECE1;
+    margin: 10px;
+}
+.informationBox{
+
+    flex-grow: 1;
+    min-height: 100%;
+    margin: 10px;  
+    flex-flow: column;
+}
+.imageBox{
+    min-height: 100%;
+    flex-grow: 2;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.infoItem{
+    display: flex;
+}
+#Title{
+    padding: 20px;
+     color: var(--theme-white, #FFF);
+     text-shadow: 2px 2px 4px #000000;
+     font-family: Source Sans Pro;
+     font-size: 88px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 100%;  
+}
+#SubTitle{
+    padding: 0px 0px 20px 20px;
+    color: #504F4F;    
+    /* Headline 6 */
+    font-family: Source Sans Pro;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.4px; /* 26.4px */
+}
+#pickUpInput{
+    display: flex;
+    align-items: center;
+    border: solid black thin; 
+padding: 10px;
+flex-direction: row;
+align-items: flex-start;
+align-self: stretch;
+width: 75%;
+height: 10%;
+margin: 24px;
+border-radius: 10px;
+background-color: #FFF;
+box-shadow: 2px 2px 4px #000000;
+align-items: center;
+}
+#inputMapItem{
+    display: flex;
+    padding: 7px 0px 8px 16px;
+    align-items: center;
+    gap: 12px;
+    flex: 1 0 0;
+    border-radius:10px;
+}
+#icon{
+    display: flex;
+    flex-grow:1;
+    justify-content: center;
+}
+#fieldMap{
+    flex-grow: 10;
+}
+#mapForm{
+    border:0;
+    padding:0;
+    margin:0;
+    display: flex;
+    align-self: stretch;
+    align-items: flex-start;
+    
+}
+#mapInput{
+    align-self: stretch;
+
+}
+input{
+    width: 100%; 
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 100%;;
+}
+#dropOffInput{
+    display: flex;
+    align-items: center;
+    border: solid black thin; 
+    background-color: #FFF;
+    box-shadow: 2px 2px 4px #000000;
+
+padding: 10px;
+flex-direction: row;
+align-items: flex-start;
+align-self: stretch;
+width: 75%;
+margin: 24px;
+border-radius: 10px;
+height: 10%;
+align-items: center;
+}
+#geoIcon{
+    display: flex;
+    align-content: center;
+
+}
+#FindSubmitButton{
+    display: flex;
+    border: none;
+    justify-content: center;
+    width: 75%;
+    margin: 20px;
+}
+button{
+    display: inline-flex;
+padding: 10px 30px;
+gap: 10px;
+border-radius: 10px;
+font-size: 100%;
+font-weight: 10px;
+color: #FFF;
+background-color: #F65900;
+}
