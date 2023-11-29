@@ -18,6 +18,8 @@ import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
 import UserDetail from './Pages/UserDetail/UserDetail'; // Adjust the import path as needed
 import Navbar from './components/Navbar_SignedIn/Navbar_SignedIn';
 import Quotation from './components/Quotation/Quotation';
+import RequestPage from './components/RequestPage/RequestPage';
+// import {useJsApiLoader, GoogleMap } from '@react-google-maps/api' 
 
 function App() {
   return (
@@ -32,7 +34,7 @@ function App() {
       <Routes>
         {/* <Route path="/" element={<Navbar/>}/> */}
         <Route path="/Quotation" element={<Quotation/>}/>
-        <Route path="/y" element={<y/>}/>
+        <Route path="/Reviews" element={<RequestPage/>}/>
         <Route path="/z" element={<z/>}/>
         {/* <Route path="/*" element={<NotFound/>}/>  */}
       </Routes>
