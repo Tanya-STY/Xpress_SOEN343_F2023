@@ -124,9 +124,8 @@ function RequestPage() {
                 </div>
             </div>
         </main>
+        </main>
         
     );
 } export default RequestPage; 
-
-
 

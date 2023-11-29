@@ -103,7 +103,7 @@ nav {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 60px;
+  top: 50px;
   /* margin-right: 200px; */
   left: -130px;
   background: #ffffff;
