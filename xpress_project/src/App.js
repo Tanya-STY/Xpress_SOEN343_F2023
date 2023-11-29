@@ -19,6 +19,8 @@ import UserDetail from './Pages/UserDetail/UserDetail.js';
 import PaymentDetails from './Pages/PaymentDetails/PaymentDetails'
 import Navbar from './components/Navbar/Navbar.js';
 import DeliPersonReqStatus from './Pages/DeliPersonReqStatus/DeliPersonReqStatus.js';
+import SignUp from './Pages/SignUp/SignUp.js';
+import SignIn from './Pages/SignIn/SignIn.js';
 
 function App() {
   return (
@@ -26,9 +28,13 @@ function App() {
       {/* <UserDetail/> */}
       {/* <PaymentDetails/> */}
       {/* <Navbar/> */}
-      <DeliPersonReqStatus/>
+      {/* <DeliPersonReqStatus/> */}
+      {/* <Home/> */}
+      {/* <SignIn/> */}
+      <SignUp/>
     </div>
   );
 }
 
 export default App;
+

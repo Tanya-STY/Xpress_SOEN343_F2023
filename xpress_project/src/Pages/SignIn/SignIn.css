@@ -1,14 +1,11 @@
-/* SignUp.css */
-
-body{
-  margin-top: 100px;
-}
+/* SignIn.css */
 
 /* Style the container */
 div {
   max-width: 400px;
   margin: 0px auto;
-  padding: 10px;
+  padding: 20px;
+  border: 1px;
   border-radius: 5px;
   background-color: #fff;
 }

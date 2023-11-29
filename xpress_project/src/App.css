@@ -1,0 +1,34 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .toggle-container {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+  }
+  
+  .toggle-button:hover {
+    background-color: #ddd;
+  }
+  
+  .toggle-button.active {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+  

@@ -1,50 +1,95 @@
 import React, { useState } from 'react';
-import './AuthForm.css';
+import './SignUp.css';
 
-const SignUp = ({ onSignInClick }) => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+const SignUp = () => {
+  const [formData, setFormData] = useState({
+    fname: '',
+    lname: '',
+    email: '',
+    pwd: '',
+  });
 
-  const handleSignUp = () => {
-    // Check if the user already exists in local storage
-    const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
-    const userExists = existingUsers.some((user) => user.email === email);
+  const signUp = (e) => {
+    e.preventDefault();
 
-    if (userExists) {
-      alert('User already exists with this email address.');
-      return;
+    const { fname, lname, email, pwd } = formData;
+
+    let storedData = JSON.parse(localStorage.getItem('formData')) || [];
+
+    const exist = storedData.some(
+      (data) =>
+        data.fname.toLowerCase() === fname.toLowerCase() &&
+        data.lname.toLowerCase() === lname.toLowerCase()
+    );
+
+    if (!exist) {
+      storedData.push({ fname, lname, email, pwd });
+      localStorage.setItem('formData', JSON.stringify(storedData));
+      setFormData({ fname: '', lname: '', email: '', pwd: '' });
+      alert('Account Created.\n\nPlease Sign In using the link below.');
+    } else {
+      alert('Ooopppssss... Duplicate found!!!\nYou have already signed up');
     }
+  };
 
-    // Add the new user to local storage
-    const newUser = { email, password };
-    const updatedUsers = [...existingUsers, newUser];
-    localStorage.setItem('users', JSON.stringify(updatedUsers));
-
-    alert('Account created successfully. Now you can sign in.');
-    onSignInClick();
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
-    <div className="auth-container">
-      <h2>Sign Up</h2>
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button onClick={handleSignUp}>Sign Up</button>
+    <div>
+      <h2>SIGN UP FORM</h2>
+      <form role="form" onSubmit={signUp} autoComplete="off">
+        <div className="form-group">
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            placeholder="First Name"
+            value={formData.fname}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            placeholder="Last Name"
+            value={formData.lname}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <input
+            type="password"
+            name="pwd"
+            id="pwd"
+            placeholder="Password"
+            value={formData.pwd}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <button type="submit">Sign Up</button>
+        </div>
+      </form>
       <p>
-        Already have an account?{' '}
-        <span className="auth-link" onClick={onSignInClick}>
-          Sign In
-        </span>
+        Already a member? <a href="/signin">Sign In</a>
       </p>
     </div>
   );
