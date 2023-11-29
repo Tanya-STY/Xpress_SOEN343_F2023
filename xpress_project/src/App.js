@@ -45,16 +45,16 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './components/DeliveryPerson/HomePage';
-import RequestStatus from './components/DeliveryPerson/RequestStatus';
+import UserOrderHistory from './components/User/UserOrderHistory';
+import DeliveryRequestStatus from './components/User/DeliveryRequestStatus';
 
 function App() {
   return (
     <div className="app">
       <Router>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/request-status/:requestNumber" element={<RequestStatus />} />
+          <Route path="/" element={<UserOrderHistory />} />
+          <Route path="/delivery-status/:requestNumber" element={<DeliveryRequestStatus />} />
         </Routes>
       </Router>
     </div>
