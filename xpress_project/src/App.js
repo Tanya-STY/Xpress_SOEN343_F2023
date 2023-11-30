@@ -22,27 +22,6 @@
 //
 //export default App;
 
-//// App.js
-//import React from 'react';
-//import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-//import HomePage from './components/DeliveryPerson/HomePage';
-//import RequestStatus from './components/DeliveryPerson/RequestStatus';
-//
-//function App() {
-//  return (
-//    <div className="app">
-//      <Router>
-//        <Routes>
-//          <Route path="/" element={<HomePage />} />
-//          <Route path="/request-status/:requestNumber" element={<RequestStatus />} />
-//        </Routes>
-//      </Router>
-//    </div>
-//  );
-//}
-//
-//export default App;
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import UserOrderHistory from './components/User/UserOrderHistory';

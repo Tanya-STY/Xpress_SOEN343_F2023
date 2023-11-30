@@ -1,14 +1,14 @@
 /* DeliveryRequestStatus.css */
 
 .delivery-request-status-container {
-  background-color: #F4EDE1; /* Light beige background */
+  background-color: #F4EDE1;
   padding: 20px;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the content vertically and horizontally */
-  justify-content: space-around; /* Distribute space evenly between children */
-  box-sizing: border-box; /* Include padding and border in height calculation */
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
 }
 
 .page-title {
@@ -22,14 +22,30 @@
   width: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the status bar horizontally */
+  align-items: center;
+  justify-content: center; /* Center both the status bar and the button vertically */
+}
+
+.review-button {
+  margin-top: 10px; /* Add some margin between the status bar and the button */
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.review-button:hover {
+  background-color: #0056b3;
 }
 
 p {
   margin: 10px 0;
 }
 
-/* Center the "Back to Homepage" link */
 Link {
   display: block;
   text-align: center;
