@@ -3,7 +3,9 @@ import Navbar from "../Navbar_SignedIn/Navbar_SignedIn"
 import geoIcon from './geoIcon_xpress.jpg' 
 import carGuy from '../images/quotationPic.png'
 import {useJsApiLoader, GoogleMap, Marker, Autocomplete, DirectionsRenderer } from '@react-google-maps/api'
-import { useState, useCallback, useRef, useEffect } from 'react'
+import { useState, useCallback, useRef, useEffect} from 'react'
+import { Link } from 'react-router-dom';
+
 
 const center = { lat: 45.497164, lng: -73.578294}; 
 
@@ -100,13 +102,18 @@ function RequestPage() {
                         </div>
                     </div>
                     <div class='infoItem' id='FindSubmitButton'>
-                        <button type='submit' onClick={calculateRoute} >Submit</button>
+                        <button type='submit' onClick={calculateRoute} >Calculate</button>
                     </div>
                     <div class='infoItem' id='RestOfthePage'>
                         <div><h3>Distance: {distance} </h3></div>
             
                         <div><h3>Duration: {duration} </h3></div>
                         <div></div>
+                    </div>
+                    <div class='infoItem' id='FindSubmitButton'>
+                        <Link to='/Quote'>
+                        <button type='submit' onClick={calculateRoute} >Proceed to payment</button>
+                        </Link>
                     </div>
                 </div>
                 <div class="imageBox">

@@ -7,6 +7,7 @@ body{
 .page-content {
   margin-left: 30px; /* 50px space between the div and the left edge */
   padding: 10px;
+  justify-content: center;
 }
 
 h1{
@@ -17,6 +18,17 @@ h1{
 .user-details {
   background: #F4ECE1;
   width: 100%;
+  display: flex;
+}
+
+.UserDetailsImg{
+  margin-right: auto;
+}
+
+.UserDetailsImg img{
+  max-width: 50%;
+  height: auto;
+  margin-left: 50px;
 }
 
 .user-details div {
@@ -53,3 +65,4 @@ h1{
 .user-details button:hover {
   background: #F69C00; /* Change color on hover */
 }
+

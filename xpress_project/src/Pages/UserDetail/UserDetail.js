@@ -2,7 +2,9 @@
 
 import React, { Component } from 'react';
 import './UserDetail.css';
-// import Navbar from '../../components/Navbar/Navbar'; // Import the Navbar component
+import userDetails from '../../components/images/UserDetails.png';
+import Navbar from '../../components/Navbar/Navbar'; // Import the Navbar component
+import { Link } from 'react-router-dom';
 
 class UserDetail extends Component {
   constructor(props) {
@@ -45,12 +47,13 @@ class UserDetail extends Component {
   };
 
   render() {
+    // <Navbar/>
+
     return (
-      
       <div className="page-content">
-      {/* <Navbar /> */}
+      <h1>User Information</h1>
+
       <div className="user-details">
-        <h1>Payment Details</h1>
         <form onSubmit={this.handleSubmit}>
           <div>
             <label htmlFor="firstName">First Name:</label>
@@ -74,6 +77,7 @@ class UserDetail extends Component {
               required
             />
           </div>
+          
           <div>
             <label htmlFor="email">Email:</label>
             <input
@@ -112,10 +116,19 @@ class UserDetail extends Component {
               className={this.state.phoneNumberValid ? '' : 'error-input'}
             />
           </div>
-          
+          <Link to='/PaymentDetails'>
           <button type="submit">Submit</button>
+          </Link>
         </form>
+        
+        <div className='UserDetailsImg'> 
+        <img src={userDetails} alt="userDetails" />
       </div>
+
+      </div>
+
+     
+
       </div>
     );
   }

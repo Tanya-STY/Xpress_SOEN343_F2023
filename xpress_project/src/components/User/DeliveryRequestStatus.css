@@ -1,0 +1,61 @@
+/* DeliveryRequestStatus.css */
+
+.delivery-request-status-container {
+    background-color: #F4EDE1;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+  }
+  
+  .page-title {
+    color: black;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .status-bar-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center both the status bar and the button vertically */
+  }
+  
+  .review-button {
+    margin-top: 10px; /* Add some margin between the status bar and the button */
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .review-button:hover {
+    background-color: #0056b3;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  Link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  Link:hover {
+    text-decoration: underline;
+  }
+  

@@ -3,8 +3,9 @@ import "./Quotation.css";
 import React, {useState, useEffect} from 'react';
 import Navbar from "../Navbar_SignedIn/Navbar_SignedIn"
 import quotationPic from "../images/quotationPic.png"
+import { Link } from 'react-router-dom';
 
-function Quotation() {
+function Quote() {
 
     const [distance, setDistance] = useState(0); //state to hold distance value
 
@@ -85,7 +86,9 @@ function Quotation() {
                 </div>
 
                 <div className="button">
+                    <Link to='/userDetails'>
                     <div className="text">Order</div>
+                    </Link>
                 </div>
 
 
@@ -111,4 +114,4 @@ function Quotation() {
         </main>
         
     );
-} export default Quotation; 
+} export default Quote; 
