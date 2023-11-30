@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import './CustomerReviewForm.css';
-import { FaStar } from 'react-icons/fa';
 
 const CustomerReviewForm = () => {
     const [customerName, setCustomerName] = useState('');
     const [reviewText, setReviewText] = useState('');
-    const [rating, setRating] = useState(0); // Default to 0 stars
+    const [reviewDate, setReviewDate] = useState('');
     const [reviews, setReviews] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const reviewsPerPage = 5;
@@ -18,16 +17,15 @@ const CustomerReviewForm = () => {
         setReviewText(e.target.value);
     };
 
-    const handleRatingChange = (newRating) => {
-        setRating(newRating);
+    const handleDateChange = (e) => {
+        setReviewDate(e.target.value);
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (customerName && rating > 0) {
-            const currentDate = new Date().toLocaleDateString();
-            const newReview = { customerName, reviewText, reviewDate: currentDate, rating };
+        if (customerName && reviewText && reviewDate) {
+            const newReview = { customerName, reviewText, reviewDate };
 
             // If editing, update the review in place
             if (editingIndex !== null) {
@@ -43,16 +41,15 @@ const CustomerReviewForm = () => {
 
             setCustomerName('');
             setReviewText('');
-            setRating(0);
+            setReviewDate('');
         }
     };
 
     const handleEdit = (index) => {
-        const indexToEdit = indexOfFirstReview + index;
-        const reviewToEdit = reviews[indexToEdit];
+        const reviewToEdit = reviews[indexOfFirstReview + index];
         setCustomerName(reviewToEdit.customerName);
         setReviewText(reviewToEdit.reviewText);
-        setRating(reviewToEdit.rating);
+        setReviewDate(reviewToEdit.reviewDate);
         setEditingIndex(index);
     };
 
@@ -93,20 +90,7 @@ const CustomerReviewForm = () => {
                 <h2>Leave Us a Review</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <label htmlFor="rating">Your Rating: *</label>
-                        <div className="star-rating">
-                            {[1, 2, 3, 4, 5].map((star) => (
-                                <FaStar
-                                    key={star}
-                                    className={star <= rating ? 'star-active' : 'star'}
-                                    onClick={() => handleRatingChange(star)}
-                                    required
-                                />
-                            ))}
-                        </div>
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="customerName">Name: *</label>
+                        <label htmlFor="customerName">Name:</label>
                         <input
                             type="text"
                             id="customerName"
@@ -116,7 +100,17 @@ const CustomerReviewForm = () => {
                         />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="reviewText">Review: *</label>
+                        <label htmlFor="reviewDate">Date:</label>
+                        <input
+                            type="date"
+                            id="reviewDate"
+                            value={reviewDate}
+                            onChange={handleDateChange}
+                            required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="reviewText">Review:</label>
                         <textarea
                             id="reviewText"
                             value={reviewText}
@@ -138,21 +132,8 @@ const CustomerReviewForm = () => {
                     <ul>
                         {currentReviews.map((review, index) => (
                             <li key={index}>
-                                <div className="star-rating">
-                                    {[1, 2, 3, 4, 5].map((star) => (
-                                        <FaStar
-                                            key={star}
-                                            className={star <= review.rating ? 'star-active' : 'star'}
-                                        />
-                                    ))}
-                                </div>
-
-                                <br/> {/* line break between rating and the rest of the review information */}
-
                                 <strong>{review.customerName}</strong> <br/><br/>
-                                {review.reviewDate} <br/><br/>
-                                {review.reviewText}{' '} <br/><br/>
-
+                                {review.reviewDate} <br/><br/> {review.reviewText}{' '} <br/><br/>
                                 <button onClick={() => handleEdit(index)}>Edit</button>
                                 <button onClick={() => handleDelete(index)}>Delete</button>
                             </li>

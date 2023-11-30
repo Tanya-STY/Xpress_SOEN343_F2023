@@ -6,9 +6,6 @@ import profile from '../images/profilePic.png';
 
 
 const Navbar = () => {
-
-
-
     return (
         <nav className="nav">
             <Link to="/">

@@ -1,12 +1,10 @@
-/* CustomerReviewForm.css */
-
 body {
     background-color: #F4ECE1;
     font-family: 'Inter', sans-serif;
 }
 
 .customer-review-form {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -86,4 +84,64 @@ li button {
 
 li button:hover {
     background-color: #bd2130;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.pagination li {
+    margin-right: 5px;
+    border: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.pagination button {
+    cursor: pointer;
+    /*padding: 5px 10px;*/
+    border: 1px solid #007bff; /* Set border color to blue */
+    border-radius: 4px;
+    background-color: #fff;
+    color: #007bff; /* Set text color to blue */
+}
+
+.pagination button:active {
+    background-color: #007bff;
+}
+
+.pagination button:focus {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination button:hover {
+    background-color: #007bff;
+    transition: color 0.3s ease;
+    color: #fff;
+}
+
+.star-rating {
+    display: flex;
+    font-size: 25px;
+}
+
+.star {
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.star:hover {
+    color: #f5c518;
+}
+
+.star-active {
+    color: #f5c518;
+    cursor: pointer;
 }

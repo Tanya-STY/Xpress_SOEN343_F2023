@@ -1,16 +1,15 @@
 import React from 'react';
 import CustomerReviewForm from './Pages/SubmitReview/CustomerReviewForm';
 import './Pages/SubmitReview/CustomerReviewForm.css'; // Import the css stylesheet
-//import Navbar from './components/Navbar_SignedIn/Navbar_SignedIn'; // Import the Navbar component
+import Navbar from './components/Navbar_SignedIn/Navbar_SignedIn'; // Import the Signed in Navbar component
 
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <h1>Xpress Reviews</h1>
+                <Navbar />
             </header>
             <main>
-                {/*<Navbar />*/}
                 <CustomerReviewForm />
             </main>
         </div>
