@@ -55,7 +55,8 @@ function RequestPage() {
         setDirectionResponse(results)
         setDistance(results.routes[0].legs[0].distance.text)
         setDuration(results.routes[0].legs[0].duration.text)
-        localStorage.setItem('distance', setDistance((results.routes[0].legs[0].distance.text)));
+        localStorage.setItem('distance', results.routes[0].legs[0].distance.text);
+        console.log(localStorage.getItem('distance'));
       }
 
     return (
@@ -105,13 +106,14 @@ function RequestPage() {
                         <div><h3>Distance: {distance} </h3></div>
             
                         <div><h3>Duration: {duration} </h3></div>
+                        <div></div>
                     </div>
                 </div>
                 <div class="imageBox">
                     <GoogleMap 
                         center={center} 
                         zoom={15} 
-                        mapContainerStyle={{width: '100%', height:'100%'}} 
+                        mapContainerStyle={{width: '100%', height:'80vh', overflow: 'hidden'}} 
                         onLoad={(map) => map.panTo(center) }
                         onUnmount={onUnmount}
                         >
@@ -123,7 +125,6 @@ function RequestPage() {
                     
                 </div>
             </div>
-        </main>
         </main>
         
     );

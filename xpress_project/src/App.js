@@ -19,6 +19,7 @@ import UserDetail from './Pages/UserDetail/UserDetail'; // Adjust the import pat
 import Navbar from './components/Navbar_SignedIn/Navbar_SignedIn';
 import Quotation from './components/Quotation/Quotation';
 import RequestPage from './components/RequestPage/RequestPage';
+import Reviews from './components/Reviews/Reviews';
 // import {useJsApiLoader, GoogleMap } from '@react-google-maps/api' 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
         {/* <Route path="/" element={<Navbar/>}/> */}
         <Route path="/Quotation" element={<Quotation/>}/>
         <Route path="/Reviews" element={<RequestPage/>}/>
-        <Route path="/z" element={<z/>}/>
+        <Route path="/FAQ" element={<Reviews/>}/>
         {/* <Route path="/*" element={<NotFound/>}/>  */}
       </Routes>
     {/* </Router> */}

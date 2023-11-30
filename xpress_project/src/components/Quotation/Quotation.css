@@ -323,7 +323,7 @@
     }
 
     .infoItem{
-        border: solid black;
+        /* border: solid black; */
         display: flex;
     }
     #Title{

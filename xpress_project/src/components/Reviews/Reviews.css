@@ -1,0 +1,99 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F4ECE1;
+    
+    }
+    .content {
+        display: flex; 
+        flex-grow: 1; 
+        max-width: 100%;
+        background-color: #F4ECE1;
+        margin: 10px;
+    }
+    .information{
+        flex-grow: 6;
+        min-height: 100%;
+        margin: 10px;  
+        flex-flow: column;
+    }
+    .image{
+        min-height: 100%;
+        flex-grow: 1;
+        margin: 10px;
+    }
+
+    #rvs{
+        width: 450px;
+        height: 312.901px;
+        flex-shrink: 0;
+        padding-top: 250px;
+        padding-left:200px;
+    }
+    
+    #title{
+        /* padding: 10px; */
+         color: black;
+         text-shadow: 0px 27px 82px rgba(255, 174, 0, 0.28), 0px 14px 15px rgba(255, 174, 0, 0.01);
+         font-family: Source Sans Pro;
+         font-size: 88px;
+         font-style: normal;
+         font-weight: 700;
+         line-height: 100%;  
+    }
+
+
+
+    .card {
+        width: 50vw;
+        margin: auto;
+        margin-bottom: 5px;
+      }
+      .card-title {
+        margin-bottom: 20px;
+        font-size: x-large;
+        font-weight: 800;
+        text-align: center;
+      }
+      .reviews-top {
+        box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
+        padding: 20px;
+        border-radius: 30px;
+      }
+      .user-details {
+        align-items: center;
+        display: flex;
+      }
+      
+      .avatar {
+        border-radius: 90px;
+        width: 60px;
+        height: 60px;
+        margin: 2px;
+      }
+      h6 {
+        font-size: larger;
+        font-weight: 700;
+        margin-right: 10px;
+      }
+      .reviews-form {
+        padding: 5px;
+        width: 50vw;
+        border-radius: 20px;
+      }
+      
+      .form-container {
+        padding: 20px;
+        /* background: #eedfdf; */
+        width: 50%;
+        border-radius: 20px;
+        margin: auto;
+      }
+
+
+    
+    
+    
+    
+    
