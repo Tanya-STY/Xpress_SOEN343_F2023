@@ -27,8 +27,8 @@ import DeliveryRequestStatus from './components/User/DeliveryRequestStatus';
 import HomePage from './components/DeliveryPerson/HomePage';
 import RequestStatus from './components/DeliveryPerson/RequestStatus';
 import Reviews from './Pages/SubmitReview/CustomerReviewForm';
-// import SignIn from './Pages/SignIn/SignIn';
-// import SignUp from './Pages/SignUp/SignUp';
+import SignIn from './Pages/SignIn/SignIn';
+import SignUp from './Pages/SignUp/SignUp';
 // import {useJsApiLoader, GoogleMap } from '@react-google-maps/api' 
 
 function App() {
@@ -42,8 +42,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/Home" element={<Home/>}/>
-        {/* <Route path="/SignIn" element={<SignIn/>}/>
-        <Route path="/SignUp" element={<SignUp/>}/> */}
+        <Route path="/SignIn" element={<SignIn/>}/> 
+        <Route path="/SignUp" element={<SignUp/>}/> 
         <Route path="/Quotation" element={<RequestPage/>}/>
         <Route path="/Quote" element={<Quote/>}/>
         <Route path="/Reviews" element={<Reviews/>}/>

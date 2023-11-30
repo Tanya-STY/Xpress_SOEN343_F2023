@@ -46,7 +46,7 @@ function RequestPage() {
 
       async function calculateRoute() {
         if (originRef.current.value === '' || destinationRef.current.value === '') {
-            return 
+            return; 
         }
         const directionService = new window.google.maps.DirectionsService();
         const results = await directionService.route({

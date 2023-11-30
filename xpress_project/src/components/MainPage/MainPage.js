@@ -12,7 +12,7 @@ function MainPage() {
           <span className="orange-text">Fast</span> Delivery
         </h1>
         <p className="quote">Delivering joy, one package at a time.</p>
-        <Link to="/Quotation">
+        <Link to="/SignIn">
         <button className="order-button">Order Now</button>
         </Link>
       </div>
