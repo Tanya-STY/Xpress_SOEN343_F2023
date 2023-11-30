@@ -1,4 +1,4 @@
-import "./Quotation.css";
+import "./Quote.css";
 // import { Currency } from "../Currency";
 import React, {useState, useEffect} from 'react';
 import Navbar from "../Navbar_SignedIn/Navbar_SignedIn"

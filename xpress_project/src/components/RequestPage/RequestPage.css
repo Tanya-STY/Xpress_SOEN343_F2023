@@ -30,10 +30,10 @@
         justify-content: center;
         align-items: center;
     }
-    .infoItem{
+    .infoItem1{
         display: flex;
     }
-    #Title{
+    #Title1{
         padding: 20px;
          color: var(--theme-white, #FFF);
          text-shadow: 2px 2px 4px #000000;
@@ -77,7 +77,7 @@
         flex: 1 0 0;
         border-radius:10px;
     }
-    #icon{
+    #icon1{
         display: flex;
         flex-grow:1;
         justify-content: center;

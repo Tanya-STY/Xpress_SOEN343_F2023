@@ -66,16 +66,16 @@ function RequestPage() {
             {/* <Navbar/> */}
             <div class="content">
                 <div class="informationBox">
-                    <div class='infoItem' id="Title"> 
+                    <div class='infoItem1' id="Title1"> 
                         Quotation
                     </div>
-                    <div class='infoItem' id='SubTitle'>
+                    <div class='infoItem1' id='SubTitle'>
                     Within a few clicks, make a delivery request!
                     </div>
-                    <div class='infoItem' id="pickUpInput">
+                    <div class='infoItem1' id="pickUpInput">
 
                         <div id='inputMapItem'>
-                            <div id='icon'>
+                            <div id='icon1'>
                                 <img id='geoIcon' alt='Icon Not Found' src={geoIcon} width='15px' height='15px'/>
                             </div>
                             <div id='fieldMap'>
@@ -87,9 +87,9 @@ function RequestPage() {
                             </div>
                         </div>
                     </div>
-                    <div class='infoItem' id='dropOffInput'>
+                    <div class='infoItem1' id='dropOffInput'>
                         <div id='inputMapItem'>
-                            <div id='icon'>
+                            <div id='icon1'>
                                 <img id='geoIcon' alt='Icon Not Found' src={geoIcon} width='15px' height='15px'/>
                             </div>
                             <div id='fieldMap'>
@@ -101,16 +101,16 @@ function RequestPage() {
                             </div>
                         </div>
                     </div>
-                    <div class='infoItem' id='FindSubmitButton'>
+                    <div class='infoItem1' id='FindSubmitButton'>
                         <button type='submit' onClick={calculateRoute} >Calculate</button>
                     </div>
-                    <div class='infoItem' id='RestOfthePage'>
+                    <div class='infoItem1' id='RestOfthePage'>
                         <div><h3>Distance: {distance} </h3></div>
             
                         <div><h3>Duration: {duration} </h3></div>
                         <div></div>
                     </div>
-                    <div class='infoItem' id='FindSubmitButton'>
+                    <div class='infoItem1' id='FindSubmitButton'>
                         <Link to='/Quote'>
                         <button type='submit' onClick={calculateRoute} >Proceed to payment</button>
                         </Link>

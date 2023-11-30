@@ -17,7 +17,7 @@ import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
 
 import UserDetail from './Pages/UserDetail/UserDetail'; // Adjust the import path as needed
 import Home from './components/MainPage/MainPage'
-import Navbar from './components/Navbar_SignedIn/Navbar_SignedIn';
+import Navbar_SignedIn from './components/Navbar_SignedIn/Navbar_SignedIn';
  import Quote from './components/Quote/Quote';
 import RequestPage from './components/RequestPage/RequestPage';
 // import Reviews from './components/Reviews/Reviews';
@@ -27,6 +27,8 @@ import DeliveryRequestStatus from './components/User/DeliveryRequestStatus';
 import HomePage from './components/DeliveryPerson/HomePage';
 import RequestStatus from './components/DeliveryPerson/RequestStatus';
 import Reviews from './Pages/SubmitReview/CustomerReviewForm';
+// import SignIn from './Pages/SignIn/SignIn';
+// import SignUp from './Pages/SignUp/SignUp';
 // import {useJsApiLoader, GoogleMap } from '@react-google-maps/api' 
 
 function App() {
@@ -34,12 +36,14 @@ function App() {
     <div className="App">
     
 
-      <Navbar/>
+      <Navbar_SignedIn/>
       
       
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/Home" element={<Home/>}/>
+        {/* <Route path="/SignIn" element={<SignIn/>}/>
+        <Route path="/SignUp" element={<SignUp/>}/> */}
         <Route path="/Quotation" element={<RequestPage/>}/>
         <Route path="/Quote" element={<Quote/>}/>
         <Route path="/Reviews" element={<Reviews/>}/>

@@ -1,0 +1,60 @@
+SignIn.css
+
+/* Style the container */
+.signInContainer {
+  max-width: 400px;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* Center the form and text */
+h2 {
+  text-align: center;
+}
+
+/* Style form elements */
+.form-group {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: dodgerblue;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #265999;
+}
+
+/* Style the link */
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
