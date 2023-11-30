@@ -54,12 +54,14 @@ function RequestPage() {
             destination: destinationRef.current.value,
             travelMode: window.google.maps.TravelMode.DRIVING
         })
-        setDirectionResponse(results)
-        setDistance(results.routes[0].legs[0].distance.text)
-        setDuration(results.routes[0].legs[0].duration.text)
-        localStorage.setItem('distance', results.routes[0].legs[0].distance.text);
-        console.log(localStorage.getItem('distance'));
-      }
+        if(results.routes && results.routes.length > 0) {
+            const calculatedDistance = results.routes[0].legs[0].distance.text;
+            setDirectionResponse(results)
+            setDistance(calculatedDistance)
+            setDuration(results.routes[0].legs[0].duration.text)
+            localStorage.setItem('distance', calculatedDistance);
+        }
+      };
 
     return (
         <main  class="main">

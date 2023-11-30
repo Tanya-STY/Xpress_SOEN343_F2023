@@ -134,8 +134,9 @@
         width: 75%;
         margin: 20px;
     }
+    
     button{
-        display: inline-flex;
+    display: inline-flex;
     padding: 10px 30px;
     gap: 10px;
     border-radius: 10px;
