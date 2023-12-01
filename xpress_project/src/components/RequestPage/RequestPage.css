@@ -127,23 +127,43 @@
         align-content: center;
     
     }
+    #FindSubmitButton1{
+        display: flex;
+        border: none;
+        justify-content: center;
+        width: 75%;
+        margin: 20px;
+        align-items: center;
+    }
     #FindSubmitButton{
         display: flex;
         border: none;
         justify-content: center;
         width: 75%;
         margin: 20px;
+        align-items: center;
     }
-    
-    button{
-    display: inline-flex;
-    padding: 10px 30px;
-    gap: 10px;
-    border-radius: 10px;
-    font-size: 100%;
-    font-weight: 10px;
-    color: #FFF;
-    background-color: #F65900;
+
+    .infoItem1 button {
+    /* display: inline-flex !important; */
+    padding: 10px 30px !important;
+    gap: 10px !important;
+    border-radius: 10px !important;
+    font-size: 100% !important;
+    font-weight: 10px !important;
+    color: #FFF !important;
+    background-color: #F65900 !important;
+    align-items: center;
+    }
+
+    .request-page-button1 {
+        width: 150px; /* Example width */
+        /* Other button styles */
+        padding: 8px 16px;
+        border-radius: 4px;
+        background-color: #F65900;
+        color: #FFF;
+        border: none; 
     }
 
     #RestOfthePage {

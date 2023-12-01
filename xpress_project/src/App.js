@@ -14,6 +14,7 @@ import DeliveryRequestStatus from './components/User/DeliveryRequestStatus';
 import HomePage from './components/DeliveryPerson/HomePage';
 import RequestStatus from './components/DeliveryPerson/RequestStatus';
 import Reviews from './Pages/SubmitReview/CustomerReviewForm';
+import SecurityPage from './components/DeliveryPerson/SecurityPage';
 
 function App() {
   const [isSignedIn, setSignedIn] = useState(false);
@@ -40,6 +41,7 @@ function App() {
         <Route path="/PaymentDetails" element={<PaymentDetails />} />
         <Route path="/UserOrderHistory" element={<UserOrderHistory />} />
         <Route path="/delivery-status/:requestNumber" element={<DeliveryRequestStatus />} />
+         <Route path="/SecurityPage" element={<SecurityPage />} />
         <Route path="/HomePage" element={<HomePage />} />
         <Route path="/request-status/:requestNumber" element={<RequestStatus />} />
         {/* <Route path="/*" element={<NotFound/>}/> */}

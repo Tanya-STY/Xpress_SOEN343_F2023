@@ -115,8 +115,8 @@ function RequestPage() {
                             </div>
                         </div>
                     </div>
-                    <div class='infoItem1' id='FindSubmitButton'>
-                        <button type='submit' onClick={calculateRoute} >Calculate</button>
+                    <div class='infoItem1' id='FindSubmitButton1'>
+                        <button type='submit' onClick={calculateRoute} className="request-page-button1" >Calculate</button>
                     </div>
                     <div class='infoItem1' id='RestOfthePage'>
                         <div><h3>Distance: {distance} </h3></div>
@@ -126,7 +126,7 @@ function RequestPage() {
                     </div>
                     <div class='infoItem1' id='FindSubmitButton'>
                         <Link to='/Quote'>
-                        <button type='submit' onClick={calculateRoute} >Proceed to payment</button>
+                        <button type='submit' onClick={calculateRoute} className="request-page-button">Proceed to payment</button>
                         </Link>
                     </div>
                 </div>

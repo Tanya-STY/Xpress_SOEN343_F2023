@@ -4,20 +4,16 @@ import { Link } from 'react-router-dom'; // Use the standard Link component
 import logo from '../images/Xpress_logo.png';
 import profile from '../images/profilePic.png';
 
-
 const Navbar = () => {
-
-
-
   return (
     <nav className="nav">
       <Link to="/">
-            <div className="navbar-logo" >
-                <img src={logo} alt="Logo" />
-            </div>
+        <div className="navbar-logo">
+          <img src={logo} alt="Logo" />
+        </div>
       </Link>
       <i className="fa-bars"></i>
-      <div className="nav-menu" style={{ fontFamily:"Poppins" }}>
+      <div className="nav-menu" style={{ fontFamily: "Poppins" }}>
         <Link to="/Home" className="nav-link" activeStyle={{ color: '#15cdfc' }}>
           Home
         </Link>
@@ -31,23 +27,18 @@ const Navbar = () => {
           FAQ
         </Link>
       </div>
-      {/* <div className="nav-btn">
-        <Link to="profile" className="nav-btn-link">
-          <img src={profile} alt="Profile" style={{ width: '50px', marginRight:'5px' }}/>
-        </Link>
-      </div> */}
       <div className="nav-btn">
-      <Link to="profile" className="nav-btn-link">
-        <div className="profile-container">
-          <img src={profile} alt="Profile" style={{ width: '50px', marginRight: '5px' }} />
-          <div class="dropdown-menu">
-            <Link to="/option1">Delivery Requests</Link>
-            <Link to="/option2">Updates</Link>
-            <Link to="/option3">Log Out</Link>
+        <Link to="/profile" className="nav-btn-link">
+          <div className="profile-container">
+            <img src={profile} alt="Profile" style={{ width: '50px', marginRight: '5px' }} />
+            <div className="dropdown-menu">
+            <Link to="/UserOrderHistory">Delivery Requests</Link>
+              {/* Modify the link to redirect to SecurityPage */}
+              <Link to="/SecurityPage">Delivery Person</Link>
+            </div>
           </div>
-        </div>
-      </Link>
-    </div>
+        </Link>
+      </div>
     </nav>
   );
 };
