@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './SignIn.css';
 
-const SignIn = () => {
+const SignIn = ({ setSignedIn }) => {
   const [formData, setFormData] = useState({
     email: '',
     pwd: '',
@@ -22,6 +22,7 @@ const SignIn = () => {
     } else {
       // Redirect or perform other actions on successful login
       alert('Login successful!');
+      setSignedIn(true); // Update the authentication status
     }
   };
 

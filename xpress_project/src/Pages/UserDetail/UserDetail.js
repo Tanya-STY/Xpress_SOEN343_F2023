@@ -89,7 +89,7 @@ class UserDetail extends Component {
               required
             />
           </div>
-          <div>
+          {/* <div>
             <label htmlFor="password">Password:</label>
             <input
               type="password"
@@ -99,7 +99,7 @@ class UserDetail extends Component {
               onChange={this.handleChange}
               required
             />
-          </div>
+          </div> */}
           <div>
             <label htmlFor="phoneNumber">Phone Number:
             {this.state.phoneNumberValid ? null : (

@@ -8,12 +8,23 @@ import { Link } from 'react-router-dom';
 function Quote() {
 
     const [distance, setDistance] = useState(0); //state to hold distance value
+    const [pickupAddress, setPickupAddress] = useState('');
+    const [dropoffAddress, setDropoffAddress] = useState('');
+    
 
     useEffect(() => {
         const storedDistance = localStorage.getItem('distance');
         if (storedDistance) {
             setDistance(parseFloat(storedDistance));
         }
+
+        const routeDataString = localStorage.getItem('routeData');
+        if (routeDataString) {
+            const routeData = JSON.parse(routeDataString);
+            setPickupAddress(routeData.pickupAddress);
+            setDropoffAddress(routeData.dropoffAddress);
+        }
+
     }, []);
 
     const calculatePrice = () => {
@@ -48,9 +59,9 @@ function Quote() {
                     <div className="item-description">
                         <div className="div">Xpress delivery</div>
                         <div className="pick-up-address-drop">
-                            [Pick-up address:...]
+                            [Pick-up address: {pickupAddress}]
                             <br />
-                            [Drop-off address:... ]
+                            [Drop-off address: {dropoffAddress}]
                         </div>
                     </div>
                     <div className="quantity">

@@ -24,9 +24,9 @@ function RequestPage() {
       const [duration, setDuration] = useState('');
 
       /** @type React.MutableRefObject<HTMLInputElement> */
-      const originRef = useRef()
+      const originRef = useRef(null)
       /** @type React.MutableRefObject<HTMLInputElement> */
-      const destinationRef = useRef()
+      const destinationRef = useRef(null)
       
       const onLoad = useCallback(function callback(map) {
         // This is just an example of getting and using the map instance!
@@ -59,7 +59,19 @@ function RequestPage() {
             setDirectionResponse(results)
             setDistance(calculatedDistance)
             setDuration(results.routes[0].legs[0].duration.text)
-            localStorage.setItem('distance', calculatedDistance);
+
+            // Extract only the numeric part of the distance for storage
+            const numericDistance = parseFloat(calculatedDistance.replace(/[^0-9.]/g, ''));
+            localStorage.setItem('distance', numericDistance);
+
+            const routeData = {
+                distance: numericDistance,
+                pickupAddress: originRef.current.value,
+                dropoffAddress: destinationRef.current.value
+            };
+
+            // Store route data in localStorage
+            localStorage.setItem('routeData', JSON.stringify(routeData));
         }
       };
 

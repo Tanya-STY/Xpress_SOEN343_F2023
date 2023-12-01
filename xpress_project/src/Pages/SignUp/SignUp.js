@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './SignUp.css';
 
-const SignUp = () => {
+const SignUp = ({ setSignedIn }) => {
   const [formData, setFormData] = useState({
     fname: '',
     lname: '',
@@ -27,6 +27,7 @@ const SignUp = () => {
       localStorage.setItem('formData', JSON.stringify(storedData));
       setFormData({ fname: '', lname: '', email: '', pwd: '' });
       alert('Account Created.\n\nPlease Sign In using the link below.');
+      setSignedIn(true); // Update the authentication status
     } else {
       alert('Ooopppssss... Duplicate found!!!\nYou have already signed up');
     }

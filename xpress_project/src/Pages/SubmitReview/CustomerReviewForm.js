@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './CustomerReviewForm.css';
 import { FaStar } from 'react-icons/fa';
 
@@ -9,6 +9,9 @@ const CustomerReviewForm = () => {
     const [reviews, setReviews] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const reviewsPerPage = 5;
+
+    let storedReview = JSON.parse(localStorage.getItem('reviews')) || [];
+
 
     const handleNameChange = (e) => {
         setCustomerName(e.target.value);
@@ -45,6 +48,8 @@ const CustomerReviewForm = () => {
             setReviewText('');
             setRating(0);
         }
+    storedReview.push({customerName, reviewText, rating});
+    localStorage.setItem('reviews', JSON.stringify(storedReview));
     };
 
     const handleEdit = (index) => {
@@ -132,11 +137,11 @@ const CustomerReviewForm = () => {
 
             <div className="review-list-container">
                 <h2>Customer Reviews</h2>
-                {currentReviews.length === 0 ? (
+                {storedReview.length === 0 ? (
                     <p>No reviews yet.</p>
                 ) : (
                     <ul>
-                        {currentReviews.map((review, index) => (
+                        {storedReview.map((review, index) => (
                             <li key={index}>
                                 <div className="star-rating">
                                     {[1, 2, 3, 4, 5].map((star) => (
