@@ -39,7 +39,7 @@ const SignIn = ({ setSignedIn }) => {
     <div className='signInContainer'>
       <h2>SIGN IN FORM</h2>
       <form role="form" onSubmit={signIn} autoComplete="off">
-        <div className="form-group">
+        <div className="form-group" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
           <input
             type="email"
             name="email"
@@ -48,9 +48,11 @@ const SignIn = ({ setSignedIn }) => {
             value={formData.email}
             onChange={handleChange}
             required
+            style={{ width: '500px' }}
+
           />
         </div>
-        <div className="form-group">
+        <div className="form-group" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
           <input
             type="password"
             name="pwd"
@@ -59,10 +61,12 @@ const SignIn = ({ setSignedIn }) => {
             value={formData.pwd}
             onChange={handleChange}
             required
+            style={{ width: '500px' }}
+
           />
         </div>
-        <div className="form-group">
-          <button type="submit">Sign In</button>
+        <div className="form-group" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+          <button type="submit" style={{width: '500px'}}>Sign In</button>
         </div>
       </form>
       <p>

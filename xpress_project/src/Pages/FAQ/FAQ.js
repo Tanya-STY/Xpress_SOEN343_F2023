@@ -62,7 +62,7 @@ const FAQ = () => {
 
     return (<>
 
-        <h1>Frequently Asked Question</h1>
+        <h1 className='FAQtitle'>Frequently Asked Question</h1>
 
         <div>
             <p className='title'>PAYMENT</p>

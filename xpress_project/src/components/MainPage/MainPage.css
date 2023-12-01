@@ -1,24 +1,24 @@
 .main-page {
     background-color: #F4EDE1;
     display: flex;
-    height: 100vh;
+    height: 800px;
     align-items: center;
   }
   
   .left-content {
     position: relative;
-    width: 50%;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px 55px;
-    height: 80vh; /* Adjust the height to fit within one page */
+    padding: 50px;
+    height: 600px; /* Adjust the height to fit within one page */
     justify-content: flex-start; /* Align content at the top */
   }
   
   h1 {
     font-size: 60px;
-    margin-bottom: 20px; /* Add some space below the title */
+    margin-bottom: 0px; /* Add some space below the title */
   }
   
   .orange-text {
@@ -35,6 +35,7 @@
     margin-top: 20px; /* Adjust the margin to space the button nicely */
     cursor: pointer;
     font-size: 20px;
+    margin-left: 40px;
   }
   
   .quote {
@@ -43,6 +44,7 @@
     font-weight: normal;
     margin-top: 10px; /* Add a small space above the quote */
     margin-bottom: 20px; /* Add some space below the quote for better spacing */
+    margin-left: 45px;
   }
   
   .right-content {
