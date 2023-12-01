@@ -64,14 +64,32 @@ function RequestPage() {
             const numericDistance = parseFloat(calculatedDistance.replace(/[^0-9.]/g, ''));
             localStorage.setItem('distance', numericDistance);
 
-            const routeData = {
-                distance: numericDistance,
-                pickupAddress: originRef.current.value,
-                dropoffAddress: destinationRef.current.value
-            };
+        //     const routeData = {
+        //         distance: numericDistance,
+        //         pickupAddress: originRef.current.value,
+        //         dropoffAddress: destinationRef.current.value
+        //     };
 
-            // Store route data in localStorage
-            localStorage.setItem('routeData', JSON.stringify(routeData));
+        //     // Store route data in localStorage
+        //     localStorage.setItem('routeData', JSON.stringify(routeData));
+        // }
+
+        const existingDeliveryData = JSON.parse(localStorage.getItem('deliveryData')) || [];
+
+const newDelivery = {
+  id: existingDeliveryData.length + 1, // Increment the ID based on existing items
+  date: '2023-12-01', // Set the date as needed
+  number: `00${existingDeliveryData.length + 1}`.slice(-3), // Increment the number based on existing items
+  status: "'Started'", // Set the initial status as needed
+  pickup: originRef.current.value, // Retrieve the pickup address
+  dropoff: destinationRef.current.value // Retrieve the drop-off address
+};
+
+// Add the new delivery to the existing delivery data
+existingDeliveryData.push(newDelivery);
+
+// Store the updated delivery data back in localStorage
+localStorage.setItem('deliveryData', JSON.stringify(existingDeliveryData));
         }
       };
 
@@ -103,7 +121,7 @@ function RequestPage() {
                     </div>
                     <div class='infoItem1' id='dropOffInput'>
                         <div id='inputMapItem'>
-                            <div id='icon1'>
+                            <div id='icon1' className="ii">
                                 <img id='geoIcon' alt='Icon Not Found' src={geoIcon} width='15px' height='15px'/>
                             </div>
                             <div id='fieldMap'>
@@ -124,7 +142,7 @@ function RequestPage() {
                         <div><h3>Duration: {duration} </h3></div>
                         <div></div>
                     </div>
-                    <div class='infoItem1' id='FindSubmitButton'>
+                    <div class='infoItem11' id='FindSubmitButton'>
                         <Link to='/Quote'>
                         <button type='submit' onClick={calculateRoute} className="request-page-button">Proceed to payment</button>
                         </Link>

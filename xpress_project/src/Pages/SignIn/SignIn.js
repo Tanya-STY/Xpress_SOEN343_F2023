@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import './SignIn.css';
+import { useNavigate } from "react-router-dom";
+
 
 const SignIn = ({ setSignedIn }) => {
+    const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
     pwd: '',
@@ -9,6 +12,7 @@ const SignIn = ({ setSignedIn }) => {
 
   const signIn = (e) => {
     e.preventDefault();
+    // let history = useHistory();
 
     const { email, pwd } = formData;
     const storedData = JSON.parse(localStorage.getItem('formData')) || [];
@@ -23,6 +27,7 @@ const SignIn = ({ setSignedIn }) => {
       // Redirect or perform other actions on successful login
       alert('Login successful!');
       setSignedIn(true); // Update the authentication status
+      navigate('/Quotation');
     }
   };
 

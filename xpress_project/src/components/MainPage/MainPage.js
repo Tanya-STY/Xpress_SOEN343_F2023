@@ -17,7 +17,7 @@ function MainPage() {
         </Link>
       </div>
       <div className="right-content">
-              <img src={deliveryGuyImage} alt="Delivery Guy" /> {/* Use the imported image */}
+              <img src={deliveryGuyImage} alt="Delivery Guy" className='img' /> {/* Use the imported image */}
             </div>
     </div>
   );

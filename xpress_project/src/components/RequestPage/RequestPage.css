@@ -122,10 +122,12 @@
     height: 10%;
     align-items: center;
     }
-    #geoIcon{
-        display: flex;
-        align-content: center;
-    
+    #icon1 #geoIcon{
+        display: flex !important;
+    align-content: center !important;
+    /* Add !important to enforce this style */
+    width: 15px !important;
+    height: 15px !important;
     }
     #FindSubmitButton1{
         display: flex;
@@ -171,6 +173,23 @@
         padding-left: 30px;
         justify-content: space-between; 
     }
+
+    .infoItem11{
+        display: flex;
+        padding-top:40px;
+    }
+
+    .infoItem11 button {
+        /* display: inline-flex !important; */
+        padding: 10px 30px !important;
+        gap: 10px !important;
+        border-radius: 10px !important;
+        font-size: 100% !important;
+        font-weight: 10px !important;
+        color: #FFF !important;
+        background-color: #F65900 !important;
+        align-items: center;
+        }
 
 
 

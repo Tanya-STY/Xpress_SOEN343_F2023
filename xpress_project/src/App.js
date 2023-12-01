@@ -15,6 +15,8 @@ import HomePage from './components/DeliveryPerson/HomePage';
 import RequestStatus from './components/DeliveryPerson/RequestStatus';
 import Reviews from './Pages/SubmitReview/CustomerReviewForm';
 import SecurityPage from './components/DeliveryPerson/SecurityPage';
+import FAQ from './Pages/FAQ/FAQ';
+import SendMessage from './Pages/SendMessage/SendMessage';
 
 function App() {
   const [isSignedIn, setSignedIn] = useState(false);
@@ -44,7 +46,8 @@ function App() {
          <Route path="/SecurityPage" element={<SecurityPage />} />
         <Route path="/HomePage" element={<HomePage />} />
         <Route path="/request-status/:requestNumber" element={<RequestStatus />} />
-        {/* <Route path="/*" element={<NotFound/>}/> */}
+        <Route path="/FAQ" element={<FAQ/>}/>
+        <Route path="/Contact" element={<SendMessage/>}/>
       </Routes>
     </div>
   );
